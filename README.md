@@ -13,9 +13,9 @@ along with example files and sample solutions for demonstration and testing.
 - The Makefile's `PORT` value is updated according to the student's chosen platform (Lab, Win, Mac).
 
 ---
-
 ## Folder Structure
 
+```
 /
 ├── zipdownload/               # Moodle plugin code
 │   ├── version.php
@@ -29,8 +29,8 @@ along with example files and sample solutions for demonstration and testing.
 │   └── led_tasks_solution.zip
 │
 └── README.md
+```
 
----
 
 ## Installation
 
