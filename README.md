@@ -44,8 +44,9 @@ along with example files and sample solutions for demonstration and testing.
 
 ## Installation
 
-1. A. Copy the `zipdownload` folder into your Moodle `mod` directory:/path/to/moodle/mod/
-   B. Log in as admin and go to **Site Administration > Plugins > Install Plugins > Drop ZIP Plugin Folder in the Upload Form
+1. A. Copy the `zipdownload` folder into your Moodle `mod` directory: **/path/to/moodle/mod/**
+   
+   B. Log in as admin and go to **Site Administration > Plugins > Install Plugins > Drop ZIP Plugin Folder in the Upload Form**
 2. Log in as admin and go to **Site Administration > Notifications** to complete the installation.
 
 ---
