@@ -64,8 +64,9 @@ along with example files and sample solutions for demonstration and testing.
 
 ## Example Files
 
--**`examples/led_tasks.zip`** — ZIP file with two C code templates for lab tasks
-- **`sample_solutions/Templates-27955-Win.zip`** — Sample downloaded template files with student name and ID replaced. Name: Tangat Baktybergen , ID: 27955, Platform: Windows
+- **`examples/led_tasks.zip`** — ZIP file with two C code templates for lab tasks
+- **`sample_solutions/Templates-27955-Win.zip`** — Sample downloaded template files with student name and ID replaced.
+  Name: Tangat Baktybergen, ID: 27955, Platform: Windows
 
 ---
 
