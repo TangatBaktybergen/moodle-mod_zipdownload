@@ -1,6 +1,7 @@
 # ZIP Download Activity Plugin for Moodle
 
-This repository contains a custom Moodle activity module for distributing individualized lab files to students, along with example files and sample solutions for demonstration and testing.
+This repository contains a custom Moodle activity module for distributing individualized lab files to students, 
+along with example files and sample solutions for demonstration and testing.
 
 ---
 
@@ -31,14 +32,12 @@ This repository contains a custom Moodle activity module for distributing indivi
 │
 └── README.md
 
-
 ---
 
 ## Installation
 
-1. Copy the `zipdownload` folder into your Moodle `mod` directory:
-/path/to/moodle/mod/zipdownload
-
+1. A. Copy the `zipdownload` folder into your Moodle `mod` directory:/path/to/moodle/mod/
+   B. Log in as admin and go to **Site Adminstration > Plugins > Install Plugins > Drop ZIP Plugin Folder in the Upload Form
 2. Log in as admin and go to **Site Administration > Notifications** to complete the installation.
 
 ---
@@ -48,17 +47,17 @@ This repository contains a custom Moodle activity module for distributing indivi
 1. In your Moodle course, turn editing on and **add an activity**.
 2. Choose **ZIP Download**.
 3. Upload your ZIP template containing `.c` files and a `Makefile`.
-4. Save and return to course.
-5. Students open the activity, select their platform, and instantly receive a personalized ZIP.
+4. Select a default platform for Makefiles : "Lab", "Mac" or "Windows".
+5. Optionally add description if needed.
+6. Save and return to course.
+7. Students open the activity, select their platform, and instantly receive a personalized ZIP.
 
 ---
 
 ## Example Files
 
-- **`examples/borrow.pdf`** — Example PDF for individualization
-- **`examples/example.pdf`** — Second sample PDF for individualization
-- **`examples/led_tasks.zip`** — ZIP with two C code templates for lab tasks
-- **`sample_solutions/led_tasks_solution.zip`** — Correct sample solutions (C code only, no .hex files)
+-**`examples/led_tasks.zip`** — ZIP file with two C code templates for lab tasks
+- **`sample_solutions/led_tasks_solution.zip`** — Sample solution ZIP (correct C code only, no `.hex` files)
 
 ---
 
