@@ -22,12 +22,10 @@ along with example files and sample solutions for demonstration and testing.
 │ ├── index.php
 │ ├── ... (other plugin files)
 │
-├── examples/ # Example files for testing
-│ ├── borrow.pdf
-│ ├── example.pdf
+├── examples/ # Example ZIP files for testing
 │ └── led_tasks.zip
 │
-├── sample_solutions/ # Example solutions for demonstration
+├── sample_solutions/ # Example solution ZIPs for demonstration
 │ └── led_tasks_solution.zip
 │
 └── README.md
