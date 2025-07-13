@@ -18,9 +18,19 @@ along with example files and sample solutions for demonstration and testing.
 ```
 /
 ├── zipdownload/               # Moodle plugin code
+│   ├── lang/en
+│      └── zipdownload.php
+│   ├── db
+│      └── upgrade.php
+│      └── install.xml
+│      └── access.php
+│   ├── pix
+│      └── icon.svg
 │   ├── version.php
-│   ├── index.php
-│   ├── ... (other plugin files)
+│   ├── view.php
+│   ├── mod_form.php
+│   ├── lib.php
+│   ├── Readme.md
 │
 ├── examples/                  # Example ZIP files for testing
 │   └── led_tasks.zip
@@ -35,7 +45,7 @@ along with example files and sample solutions for demonstration and testing.
 ## Installation
 
 1. A. Copy the `zipdownload` folder into your Moodle `mod` directory:/path/to/moodle/mod/
-   B. Log in as admin and go to **Site Adminstration > Plugins > Install Plugins > Drop ZIP Plugin Folder in the Upload Form
+   B. Log in as admin and go to **Site Administration > Plugins > Install Plugins > Drop ZIP Plugin Folder in the Upload Form
 2. Log in as admin and go to **Site Administration > Notifications** to complete the installation.
 
 ---
@@ -45,9 +55,9 @@ along with example files and sample solutions for demonstration and testing.
 1. In your Moodle course, turn editing on and **add an activity**.
 2. Choose **ZIP Download**.
 3. Upload your ZIP template containing `.c` files and a `Makefile`.
-4. Select a default platform for Makefiles : "Lab", "Mac" or "Windows".
-5. Optionally add description if needed.
-6. Save and return to course.
+4. Select a default platform for Makefiles: "Lab", "Mac", or "Windows".
+5. Optionally add a description if needed.
+6. Save and return to the course.
 7. Students open the activity, select their platform, and instantly receive a personalized ZIP.
 
 ---
