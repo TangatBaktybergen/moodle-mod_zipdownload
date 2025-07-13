@@ -17,16 +17,16 @@ along with example files and sample solutions for demonstration and testing.
 ## Folder Structure
 
 /
-├── zipdownload/ # Moodle plugin code
-│ ├── version.php
-│ ├── index.php
-│ ├── ... (other plugin files)
+├── zipdownload/               # Moodle plugin code
+│   ├── version.php
+│   ├── index.php
+│   ├── ... (other plugin files)
 │
-├── examples/ # Example ZIP files for testing
-│ └── led_tasks.zip
+├── examples/                  # Example ZIP files for testing
+│   └── led_tasks.zip
 │
-├── sample_solutions/ # Example solution ZIPs for demonstration
-│ └── led_tasks_solution.zip
+├── sample_solutions/          # Example solution ZIPs for demonstration
+│   └── led_tasks_solution.zip
 │
 └── README.md
 
