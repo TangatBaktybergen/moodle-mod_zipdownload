@@ -32,11 +32,11 @@ along with example files and sample solutions for demonstration and testing.
 │   ├── lib.php
 │   ├── Readme.md
 │
-├── examples/                  # Example ZIP files for testing
+├── examples/                  # Example ZIP templates for testing
 │   └── led_tasks.zip
 │
-├── sample_solutions/          # Example solution ZIPs for demonstration
-│   └── led_tasks_solution.zip
+├── sample_solutions/          # Example downloaded ZIP templates for demonstration
+│   └── Templates-27955-Win.zip      # The filename format: Templates-StudentID-Platform.zip
 │
 └── README.md
 ```
@@ -54,18 +54,18 @@ along with example files and sample solutions for demonstration and testing.
 
 1. In your Moodle course, turn editing on and **add an activity**.
 2. Choose **ZIP Download**.
-3. Upload your ZIP template containing `.c` files and a `Makefile`.
+3. Upload your ZIP template containing `.c` files and a `Makefile`. ( in example led_tasks.zip )
 4. Select a default platform for Makefiles: "Lab", "Mac", or "Windows".
 5. Optionally add a description if needed.
 6. Save and return to the course.
-7. Students open the activity, select their platform, and instantly receive a personalized ZIP.
+7. Students open the activity, select their platform, and instantly receive a personalized ZIP. ( in example Templates-27955-Win.zip )
 
 ---
 
 ## Example Files
 
 -**`examples/led_tasks.zip`** — ZIP file with two C code templates for lab tasks
-- **`sample_solutions/led_tasks_solution.zip`** — Sample solution ZIP (correct C code only, no `.hex` files)
+- **`sample_solutions/Templates-27955-Win.zip`** — Sample downloaded template files with student name and ID replaced. Name: Tangat Baktybergen , ID: 27955, Platform: Windows
 
 ---
 
