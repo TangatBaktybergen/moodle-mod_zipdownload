@@ -1,7 +1,6 @@
 # ZIP Download Activity Plugin for Moodle
 
-This repository contains a custom Moodle activity module for distributing individualized lab files to students, 
-along with example files and sample solutions for demonstration and testing.
+This repository contains a custom Moodle activity module for distributing individualized lab files to students by generating personalized ZIP templates that automatically replace @author and student ID placeholders in C code with each student’s data, along with example files and sample solutions for demonstration and testing.
 
 ---
 
