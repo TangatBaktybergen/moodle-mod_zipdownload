@@ -8,10 +8,6 @@ Designed as an activity module, this plugin allows teachers to upload a ZIP temp
 
 ---
 
-This Moodle activity plugin allows teachers to upload a ZIP template containing many subfolders containing C files (`.c` and `.h`) and a `Makefile`. When a student opens the activity and select the platform, a personalized ZIP file is generated on-the-fly and downloaded.
-
----
-
 ##  What It Does
 - Teacher uploads a ZIP template when creating the activity.
 - ZIP may contain subfolders with one or more `.c` source files and a `Makefile`.
