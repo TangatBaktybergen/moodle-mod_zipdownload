@@ -56,7 +56,7 @@ When the student clicks the activity:
 │   ├── Readme.md
 │
 ├── examples/                  # Example ZIP templates for testing
-│   └── led_tasks.zip
+│   └── Templates.zip
 │
 ├── sample_solutions/          # Example downloaded ZIP templates for demonstration
 │   └── Templates-27955-Win.zip      # The filename format: Templates-StudentID-Platform.zip
@@ -87,15 +87,7 @@ When the student clicks the activity:
 - A personalized ZIP is available for download instantly.
 
 ---
-
-## Example Files
-
-- **`examples/led_tasks.zip`** — ZIP file with two C code templates for lab tasks
-- **`sample_solutions/Templates-27955-Win.zip`** — Sample downloaded template files with student name and ID replaced.
-  Name: Tangat Baktybergen, ID: 27955, Platform: Windows
-
----
-
+ 
 ## Authors
 
 Ivan Volosyak, Tangat Baktybergen
@@ -107,3 +99,5 @@ Ivan Volosyak, Tangat Baktybergen
 GNU GPL v3 or later
 
 ---
+
+*Developed at Rhine-Waal University of Applied Sciences (Hochschule Rhein-Waal, HSRW), Kleve, Germany.*
