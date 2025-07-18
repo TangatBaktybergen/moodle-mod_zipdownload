@@ -1,17 +1,41 @@
-# ZIP Download Activity Plugin for Moodle
+# Individual ZIP Download Activity Plugin for Moodle
 
-This repository contains a custom Moodle activity module for distributing individualized lab files to students by generating personalized ZIP templates that automatically replace @author and student ID placeholders in C code with each student’s data, along with example files and sample solutions for demonstration and testing.
+## Short Description
+
+Moodle plugin for generating individual zip templates, automatically replacing @author and student ID placeholders in C code with personalized student data. It was designed specifically for the Microcontroller course utilizing the ATmega microcontrollers programmed in C. With typically over 50 small programs to be created during the semester by each student, this plugin will save significant time by automating the inclusion of student IDs and their names in each file.
+
+Designed as an activity module, this plugin allows teachers to upload a ZIP template containing placeholders (@author to be replaced by the full name of each student and 00000 to be replaced by the student ID). Students can download a personalized ZIP with their name and ID automatically filled across over 50 files of source code and specific Makefiles depending on the operating system selection.
+
+---
+
+This Moodle activity plugin allows teachers to upload a ZIP template containing many subfolders containing C files (`.c` and `.h`) and a `Makefile`. When a student opens the activity and select the platform, a personalized ZIP file is generated on-the-fly and downloaded.
 
 ---
 
-## Features
-
-- Teachers upload a ZIP template containing `.c` files and a `Makefile` when creating the activity.
-- When students access the activity, the plugin generates and downloads a personalized ZIP with their name and student ID inserted into the files.
-- The plugin can adjust placeholders in `.c` files (e.g., `@author TODO`, `"00000"`)
-- The Makefile's `PORT` value is updated according to the student's chosen platform (Lab, Win, Mac).
+##  What It Does
+- Teacher uploads a ZIP template when creating the activity.
+- ZIP may contain subfolders with one or more `.c` source files and a `Makefile`.
+- The plugin searches each `.c` file and replaces:
+  - `@author TODO` → `@author Firstname Lastname`
+  - `"00000"` → `"StudentID"` (from Moodle ID number or user ID)
+- It also edits each `Makefile` to update the `PORT` value based on student platform selection.
 
 ---
+
+##  Platform Selection
+When the student clicks the activity:
+- They are prompted to select their platform (used operating system):
+  - **Lab** → `PORT=/dev/ttyUSB_MySmartUSB` (default)
+  - **Win** → `PORT=COM3`
+  - **Mac** → `PORT=/dev/tty.SLAB_USBtoUART`
+- The plugin edits the `PORT=` line in every available `Makefile` accordingly.
+- The generated ZIP offered for download is named to reflect the student and platform, for example:
+  - `Templates-12345-Lab.zip`
+  - `Templates-12345-Win.zip`
+  - `Templates-12345-Mac.zip`
+  
+---
+
 ## Folder Structure
 
 ```
@@ -40,26 +64,27 @@ This repository contains a custom Moodle activity module for distributing indivi
 └── README.md
 ```
 
+---
 
-## Installation
+##  Installation
 
-1. A. Copy the `zipdownload` folder into your Moodle `mod` directory: **/path/to/moodle/mod/**
-2. **Alternatively**, install via Moodle web interface:
-  
-   Log in as admin and go to **Site Administration > Plugins > Install Plugins > Drop ZIP Plugin Folder in the Upload Form**
-3. Log in as admin and go to **Site Administration > Notifications** to complete the installation.
+1. Unzip this plugin into the `mod` directory of your Moodle installation:
+2. Go to **Site Administration > Notifications** to complete the installation.
+
+---
+##  Creating the Activity
+
+1. In a course, turn editing on and **Add an activity**.
+2. Choose **ZIP Download**.
+3. Upload your `.zip` template containing `.c` files and a `Makefile`.
+4. Save and return to course.
 
 ---
 
-## Usage
-
-1. In your Moodle course, turn editing on and **add an activity**.
-2. Choose **ZIP Download**.
-3. Upload your ZIP template containing `.c` files and a `Makefile`. ( in example led_tasks.zip )
-4. Select a default platform for Makefiles: "Lab", "Mac", or "Windows".
-5. Optionally add a description if needed.
-6. Save and return to the course.
-7. Students open the activity, select their platform, and instantly receive a personalized ZIP. ( in example Templates-27955-Win.zip )
+## Student View
+- When students click the activity, they are asked to choose their platform (Lab/Win/Mac).
+- The ZIP uploaded by the teacher is extracted and automatically processed.
+- A personalized ZIP is available for download instantly.
 
 ---
 
@@ -73,8 +98,7 @@ This repository contains a custom Moodle activity module for distributing indivi
 
 ## Authors
 
-- Ivan Volosyak
-- Tangat Baktybergen
+Ivan Volosyak, Tangat Baktybergen
 
 ---
 
@@ -83,8 +107,3 @@ This repository contains a custom Moodle activity module for distributing indivi
 GNU GPL v3 or later
 
 ---
-
-*Developed for bachelor’s thesis at Hochschule Rhein-Waal.*
-
-
-
